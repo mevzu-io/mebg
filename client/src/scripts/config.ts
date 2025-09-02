@@ -4,9 +4,9 @@ import type { ModeName } from "@common/definitions/modes";
 export const Config = {
     regions: {
         dev: {
-            name: "Local Server",
-            mainAddress: "http://127.0.0.1:8000",
-            gameAddress: "ws://127.0.0.1:<gameID>",
+            name: "EU",
+            mainAddress: "http://164.92.242.117:8000",
+            gameAddress: "ws://164.92.242.117:<gameID>",
             offset: 8001
         }/* ,
         na: {
