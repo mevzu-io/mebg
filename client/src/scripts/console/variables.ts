@@ -261,10 +261,10 @@ export const defaultClientCVars: SimpleCVarMapping = Object.freeze({
     cv_loadout_extra2_emote: "",
     cv_loadout_death_emote: "",
     cv_loadout_win_emote: "",
-    cv_master_volume: 1,
+    cv_master_volume: 0,
     cv_sfx_volume: 1,
     cv_ambience_volume: 1,
-    cv_music_volume: 1,
+    cv_music_volume: 0,
 
     cv_loop_scope_selection: false,
     cv_anonymize_player_names: false,
@@ -300,7 +300,7 @@ export const defaultClientCVars: SimpleCVarMapping = Object.freeze({
         }
     },
     cv_minimap_minimized: {
-        value: false,
+        value: true,
         flags: {
             archive: false
         }
@@ -326,7 +326,7 @@ export const defaultClientCVars: SimpleCVarMapping = Object.freeze({
 
     cv_autopickup: true,
     cv_autopickup_dual_guns: true,
-    cv_language: "en",
+    cv_language: "tr",
 
     // unused for now
     cv_mute_audio: false,
@@ -342,7 +342,7 @@ export const defaultClientCVars: SimpleCVarMapping = Object.freeze({
 
     mb_switch_joysticks: false,
     mb_controls_enabled: true,
-    mb_joystick_size: 150,
+    mb_joystick_size: 100,
     mb_joystick_transparency: 0.8,
     mb_left_joystick_color: "#FFFFFF",
     mb_right_joystick_color: "#FFFFFF",

@@ -1,7 +1,7 @@
 import { Layer, ZIndexes } from "@common/constants";
 import { Color } from "pixi.js";
 
-export const FORCE_MOBILE = false;
+export const FORCE_MOBILE = true;
 export const UI_DEBUG_MODE = false;
 export const DIFF_LAYER_HITBOX_OPACITY = 0.25;
 export const FOOTSTEP_HITBOX_LAYER = Layer.Ground;
@@ -41,7 +41,7 @@ export const TEAMMATE_COLORS = [
     new Color("#ff8000")
 ];
 
-export const PIXI_SCALE = 20;
+export const PIXI_SCALE = 25;
 
 export const WALL_STROKE_WIDTH = 8;
 

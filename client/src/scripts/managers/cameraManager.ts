@@ -76,7 +76,7 @@ class CameraManagerClass {
         const minDimension = Numeric.min(this.width, this.height);
         const maxDimension = Numeric.max(this.width, this.height);
         const maxScreenDim = Numeric.max(minDimension * (16 / 9), maxDimension);
-        const scale = (maxScreenDim * 0.5) / (this._zoom * PIXI_SCALE);
+        const scale = (maxScreenDim * 1.3) / (this._zoom * PIXI_SCALE);
 
         this.zoomTween?.kill();
 

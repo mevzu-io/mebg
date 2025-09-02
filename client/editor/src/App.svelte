@@ -15,7 +15,7 @@
     import { Vec } from "../../../common/src/utils/vector";
     import { PIXI_SCALE } from "../../src/scripts/utils/constants";
     import Hitbox from "./lib/hitbox.svelte";
-  import { removeFrom } from "@common/utils/misc";
+    import { removeFrom } from "@common/utils/misc";
 
     let hitboxes: HitboxJSON[] = [
         ...new GroupHitbox(
@@ -29,7 +29,7 @@
 
     let x = 0;
     let y = 0;
-    let scale = 1;
+    let scale = 2;
     let pointerX = 0;
     let pointerY = 0;
 
