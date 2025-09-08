@@ -3,57 +3,19 @@ import type { ModeName } from "@common/definitions/modes";
 
 export const Config = {
     regions: {
-        dev: {
-            name: "EU",
-            mainAddress: "http://164.92.242.117:8000",
-            gameAddress: "ws://164.92.242.117:<gameID>",
-            offset: 8001
-        }/* ,
-        na: {
-            name: "North America",
-            flag: "🇺🇸 ",
-            mainAddress: "https://na.suroi.io",
-            gameAddress: "wss://na.suroi.io/game/<gameID>",
-            offset: 1
-        },
-        eu: {
-            name: "Europe",
-            flag: "🇩🇪 ",
-            mainAddress: "https://eu.suroi.io",
-            gameAddress: "wss://eu.suroi.io/game/<gameID>",
-            offset: 1
-        },
-        sa: {
-            name: "South America",
-            flag: "🇧🇷 ",
-            mainAddress: "https://sa.suroi.io",
-            gameAddress: "wss://sa.suroi.io/game/<gameID>",
-            offset: 1
-        },
-        as: {
-            name: "Asia",
-            flag: "🇻🇳 ",
-            mainAddress: "https://as.suroi.io",
-            gameAddress: "wss://as.suroi.io/game/<gameID>",
-            offset: 1
-        },
-        ea: {
-            name: "East Asia",
-            flag: "🇭🇰 ",
-            mainAddress: "https://ea.suroi.io",
-            gameAddress: "wss://ea.suroi.io/game/<gameID>",
-            offset: 1
-        },
-        oc: {
-            name: "Oceania",
-            flag: "🇦🇺 ",
-            mainAddress: "https://oc.suroi.io",
-            gameAddress: "wss://oc.suroi.io/game/<gameID>",
-            offset: 1
-        } */
+      prod: {
+        name: "EU",
+        // Cloudflare proxied subdomainin (HTTPS)
+        mainAddress: "http://164.92.242.117",
+        // WS de aynı domainden, path tabanlı:
+        // <gameID> yer tutucusu server’ın verdiği gameID + offset ile değişir
+        gameAddress: "wss://164.92.242.117/play/<gameID>",
+        // genelde 1 (gameID 0 için /play/1 gibi) — port değil, ID offset’i:
+        offset: 1
+      }
     },
-    defaultRegion: "dev"
-} satisfies ConfigType as ConfigType;
+    defaultRegion: "prod"
+  } as const;
 
 export interface ConfigType {
     readonly regions: Record<string, Region>
