@@ -9,7 +9,7 @@ export const Config = {
         mainAddress: "https://mebg.mevzu.io",
         // WS de aynı domainden, path tabanlı:
         // <gameID> yer tutucusu server’ın verdiği gameID + offset ile değişir
-        gameAddress: "wss://mebg.mevzu.io/play/<gameID>",
+        gameAddress: "wss://mebg.mevzu.io/play/0",
         // genelde 1 (gameID 0 için /play/1 gibi) — port değil, ID offset’i:
         offset: 1,
       }
