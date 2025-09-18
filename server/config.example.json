@@ -5,8 +5,8 @@
     "map": "normal",
     "teamMode": "solo",
     "spawn": { "mode": "default" },
-    "maxPlayersPerGame": 80,
-    "maxGames": 5,
+    "maxPlayersPerGame": 200,
+    "maxGames": 10,
     "roles": {
         "developr": { "password": "developr", "isDev": true },
         "dev_managr": { "password": "dev_managr" },

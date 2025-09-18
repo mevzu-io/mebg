@@ -2,20 +2,11 @@ import { type TeamMode } from "@common/constants";
 import type { ModeName } from "@common/definitions/modes";
 
 export const Config = {
-    regions: {
-      prod: {
-        name: "EU",
-        // Cloudflare proxied subdomainin (HTTPS)
-        mainAddress: "http://164.92.242.117",
-        // WS de aynı domainden, path tabanlı:
-        // <gameID> yer tutucusu server’ın verdiği gameID + offset ile değişir
-        gameAddress: "wss://164.92.242.117/play/<gameID>",
-        // genelde 1 (gameID 0 için /play/1 gibi) — port değil, ID offset’i:
-        offset: 1
-      }
-    },
-    defaultRegion: "prod"
-  } as const;
+  regions: {
+    default: { name: "Mevzu Server", address: "164.92.242.117", https: false }
+  },
+  defaultRegion: "default"
+};
 
 export interface ConfigType {
     readonly regions: Record<string, Region>
