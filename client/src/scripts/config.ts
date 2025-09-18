@@ -6,7 +6,7 @@ export const Config = {
       prod: {
         name: "EU",
         // Cloudflare proxied subdomainin (HTTPS)
-        mainAddress: "http://164.92.242.117/",
+        mainAddress: "http://164.92.242.117",
         // WS de aynı domainden, path tabanlı:
         // <gameID> yer tutucusu server’ın verdiği gameID + offset ile değişir
         gameAddress: "wss://164.92.242.117/play/<gameID>",
