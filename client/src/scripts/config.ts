@@ -6,10 +6,10 @@ export const Config = {
       prod: {
         name: "EU",
         // Cloudflare proxied subdomainin (HTTPS)
-        mainAddress: "http://164.92.242.117",
+        mainAddress: "https://mebg.mevzu.io",
         // WS de aynı domainden, path tabanlı:
         // <gameID> yer tutucusu server’ın verdiği gameID + offset ile değişir
-        gameAddress: "wss://164.92.242.117/play/<gameID>",
+        gameAddress: "wss://mebg.mevzu.io/play/<gameID>",
         // genelde 1 (gameID 0 için /play/1 gibi) — port değil, ID offset’i:
         offset: 1,
       }
